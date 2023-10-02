@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #06141b;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #ccd0cf;
+}
+
+h1,h2 {
+    color: white;
+    font-family: "Playfair Display", "serif";
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 44px;
+    margin: 0;
+}
+
+.navigation {
+    float: left;
+    width: 1000px;
+    font-size: 0;
+    text-transform: uppercase;
+  }
+  .menu_item{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .menu_item a{
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 18px;
+    color: white;
+  }
+  .menu_item a:hover{
+    background: #253745;
+  }
+  .login-link{
+    display: inline-block;
+    position: relative;
+    padding: 25px 20px;
+    padding-left:52px;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .login-link::before{
+    content:"";
+    position:absolute;
+    top:28px;
+    left:24px;
+    width:16px;
+    height:16px;
+    /* background-color: aqua; */
+    background-image:url(img/login.svg);
+    opacity:.6
+  }
+  .login-link:active::before,
+  .login-link:hover::before{
+    background-color: #253745;
+    opacity:1
+    }
+  .menu_item a:hover{
+    background: #253745;
+  }
+  .login-link:hover{
+    background-color: #253745;
+  }
+
+span {
+    font-size: 20px;
+    color: #ccd0cf;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.counting {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.counting-item {
+    width: 340px;
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: rgb(37, 55, 69, 0.2);
+    border-radius: 35px;
+    padding: 15px;
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-block div {
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 550px;
+    background-color: rgb(37, 55, 69, 0.2);
+    border-radius: 35px;
+    padding: 15px;
+}
+
+.info-block img {
+    width: 550px;
+    border-radius: 35px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    filter: invert(68%) sepia(8%) saturate(312%) hue-rotate(144deg) brightness(95%) contrast(92%);
+}
